@@ -1,0 +1,13 @@
+name: "Tangfreres"
+description: "This a super market thene"
+type: theme
+logo: "logo.png"
+core: 8.x
+base theme: classy
+libraries:
+  - tangfreres/global-css
+  - tangfreres/global-js
+regions:
+  header: Header
+  content: Content
+  footer: Footer

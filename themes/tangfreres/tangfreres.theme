@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Functions to support theming in the Seven theme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+function tangfreres_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+	var_dump("eeeee");
+    var_dump($form_id);
+}

@@ -1,0 +1,55 @@
+<div id="main" class="main-content">
+
+    <header id="header" class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+
+        <div class="button__menu-container">
+            <button class="button__menu-open">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="button__menu-close"></button>
+        </div>
+
+        <div class="wrapper">
+            {{ page.header }}
+
+
+            <{#?php if ($class == 'home') : ?>
+            <h1 class="header__title visuallyhidden"><a href="01-home.php">Titre h1</a></h1>
+            <?php else: ?>
+            <div class="header__title visuallyhidden"><a href="01-home.php">Titre</a></div>
+            <?php endif; ?>#}
+
+            <nav id="menu" class="menu menu__mobile" role="navigation" itemscope
+                 itemtype="http://schema.org/SiteNavigationElement">
+                <div class="wrapper">
+                    <ul>
+                        <li class="story current_page_item"><a href="#"><p><span>Notre histoire</span></p></a></li>
+                        <li class="product current-menu-item"><a href="#"><p><span>Nos produits</span></p></a></li>
+                        <li class="recipe"><a href="#"><p><span>Nos recettes</span></p></a></li>
+                        <li class="news"><a href="#"><p><span>Nos actualités</span></p></a></li>
+                        <li class="shop"><a href="#"><p><span>Nos magasins</span></p></a></li>
+                        <li class="caterer"><a href="#"><p><span>Traiteur tang gourmet</span></p></a>
+                        </li>
+                        <li class="search hidden-md"><a href="#"><p><span>Rechercher</span></p></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="search__container">
+            <button class="button__search"></button>
+        </div>
+
+        <form action="" class="form__search">
+            <input class="search_s" type="text" placeholder="Que recherchez-vous ?">
+            <input type="submit">
+        </form>
+    </header>
+
+    <main id="main__content" class="main__content" role="main" itemscope itemprop="mainContentOfPage"
+          itemtype="http://schema.org/Blog">
